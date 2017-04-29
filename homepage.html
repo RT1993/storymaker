@@ -62,14 +62,13 @@
  </div>
 
 
-<div class="c-pin"></div>
  <div class="onboarding">
   <div class="gesture">
     <img src="image/gesture.png"></img>
   </div> 
   <div class="instruction1">
     <img src="image/avatar.png">
-    <div class="first_info">
+    <div class="first_info" onclick="playPause()">
       <h1>
         Hi ! Welcome to STORYMAKER!
       <br>  
@@ -78,7 +77,20 @@
     </div>  
   </div>  
  </div> 
+ <video id="video1" width="0">
+      <source src="media/welcome.mp4" type="video/mp4">
+    </video>
+ <script> 
+      var myVideo = document.getElementById("video1"); 
 
+      function playPause() { 
+          if (myVideo.paused) 
+            myVideo.play(); 
+          else 
+            myVideo.pause(); 
+      } 
+ </script>    
+  
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
     <script src="js/index.js"></script>
