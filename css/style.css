@@ -257,6 +257,21 @@
   background-color: #efefef;
   border: 6px solid #fff;
 }
+
+.canva2 img{
+  color: rgba(0,0,0,0);
+  width:60px;
+  padding:25px 25px;
+  height:60px;
+  background-color: #efefef;
+  border: 6px solid #2f7c66;
+  box-shadow:3px 3px 5px rgba(0,0,0,0.5);
+}
+.canva2 img:hover{
+  background-color: #efefef;
+  border: 6px solid #fff;
+}
+
 .banner{
 	margin-left: 2px;
 }
