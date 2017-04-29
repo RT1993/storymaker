@@ -1558,12 +1558,24 @@ width: 384px;
 }
 .popup_contain{
  max-width: 100%;
+ margin-top: 102px;
+ margin-right: -10px;
+ margin-left: -40px;
 }
 .popup_close {
     position: absolute;
-    right: 134px;
-    top: -4px;
+    right: 130px;
+    top: -10px;
 }
+.popup_close2{
+    margin-left: -143px;
+}
+.dragbar {
+    margin-left: 485px;
+    margin-top: 95px;
+}
+
+
 }
 
 
