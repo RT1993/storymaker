@@ -1589,8 +1589,11 @@ width: 384px;
 }
 
 
-
-
+@media only screen and (max-width: 1024px){
+body{
+  display: none;
+}
+}
 
 
 
