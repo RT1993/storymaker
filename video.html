@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Storymaker</title>
-     <link rel="stylesheet" href="css/style.css"> 
+  <link rel="stylesheet" href="css/style.css"> 
 </head>
 
 <body>
@@ -14,36 +14,61 @@
       <a href="create_timer.html"><div class="back"><img src="image/back.png"></img></div></a>
     </div>
 
-    
-    <div style="text-align:center"> 
-       
 
-    <video id="video1" width="1024">
-      <source src="media/startvideo.mp4" type="video/mp4">
-      <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
-      Your browser does not support HTML5 video.
-    </video>
-    
-    <div class="playpause" onclick="playPause()"><img src="image/play.png"><div>  
-</div> 
+    <div style="text-align:center"> 
+
+
+      <video id="video1" width="1024">
+        <source src="media/startvideo.mp4" type="video/mp4">
+          <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
+          Your browser does not support HTML5 video.
+        </video>
+
+        <div class="playpause" onclick="playPause()"><img id="status-img" src="image/play.png"><div>  
+        </div> 
+
+
+
+
+
+      </div>  
+      
+    </div>
+  </div>
+
+</body>
+
+
+
 
 <script> 
-var myVideo = document.getElementById("video1"); 
 
-function playPause() { 
-    if (myVideo.paused) 
-        myVideo.play(); 
-    else 
-        myVideo.pause(); 
-} 
+  var myVideo = document.getElementById("video1"); 
+  var statusImg = document.getElementById("status-img");
+
+  
+  function playPause() { 
+
+    console.log(myVideo.currentTime);
+
+    if (myVideo.paused) {
+      // console.log("playyiiing"); 
+      statusImg.src = "image/pause.png"; 
+      myVideo.play(); 
+
+    } else {
+
+      statusImg.src = "image/play.png"; 
+      myVideo.pause(); 
+      // console.log("pauuuused");
+    } 
+
+  };
+
+  myVideo.addEventListener('ended',myHandler,false);
+  function myHandler(e) {
+    statusImg.src = "image/play.png"; 
+  }
 
 
 </script> 
-
-
-
-
-
-  </div>  
-<script src="js/index.js"></script>
-</body>
