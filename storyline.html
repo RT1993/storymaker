@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Storymaker</title>
+     <link rel="stylesheet" href="css/style.css"> 
+</head>
+
+<body>
+	<div class="storyline">first page </div>
+
+    <div class="nav">
+      <!-- <a href="background.html"><div class="next"><img src="image/next.png"></img></div></a> -->
+      <a href="homepage.html"><div class="back"><img src="image/back.png"></img></div></a>
+    </div>
+
+    <div class="line">
+    	<div class="start">
+    		<div class="progress">
+    			<img src="image/mark1.png"></img>
+    		</div>
+    		<a href="background.html" style="text-decoration:none">
+    			<div class="canva">
+    			<h1>first plot<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa
+                </h1>
+    		</div>
+    		<div class="banner">
+    			<div><img src="image/banner.png"></img></div>
+    		</div>
+    	    </a>
+    		<div class="speaker" onclick="playPause()">
+    			<img src="image/voice.png"></img>
+    		</div>
+    	</div>
+
+    	<div class="problem">
+    		<div class="progress">
+    			<img src="image/mark2.png"></img>
+    		</div>
+    		<div class="canva">
+    			<h1>first plot<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa</h1>
+    		</div>
+    		<div class="banner">
+    			<img src="image/problem.png"></img>
+    		</div>
+    		<div class="audio" onclick="playPause2()">
+    			<img src="image/voice.png"></img>
+    		</div>
+    	</div>
+
+    	<div class="climax">
+    		<div class="progress">
+    			<img src="image/mark3.png"></img>
+    		</div>
+    		<div class="canva">
+    			<h1>first plot<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa</h1>
+    		</div>
+    		<div class="banner">
+    			<img src="image/climax.png"></img>
+    		</div>
+    		<div class="audio">
+    			<img src="image/voice.png"></img>
+    		</div>
+    	</div>
+
+    	<div class="solution">
+    		<div class="progress">
+    			<img src="image/mark4.png"></img>
+    		</div>
+    		<div class="canva">
+    			<h1>first plot<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa</h1>
+    		</div>
+    		<div class="banner">
+    			<img src="image/solution.png"></img>
+    		</div>
+    		<div class="audio">
+    			<img src="image/voice.png"></img>
+    		</div>
+    	</div>
+
+    	<div class="end">
+    		<div class="progress">
+    			<img src="image/mark5.png"></img>
+    		</div>
+    		<div class="canva">
+    			<h1>first plot<br>aaa<br>aaa<br>aaa<br>aaa<br>aaa</h1>
+    		</div>
+    		<div class="banner">
+    			<img src="image/end.png"></img>
+    		</div>
+    		<div class="audio">
+    			<img src="image/voice.png"></img>
+    		</div>
+    	</div>
+    </div>
+
+	<div class="tabbutton2">
+	  <div class="setting"><img src="image/setting.png"></img></div>
+  	  <div class="sound2"><img src="image/sound.png"></img></div>
+    </div>
+
+    <video id="video1" width="0">
+      <source src="media/start.mp4" type="video/mp4">
+    </video>
+    <video id="video2" width="0">
+      <source src="media/problem.mp4" type="video/mp4">
+    </video>
+
+    <script> 
+      var myVideo = document.getElementById("video1"); 
+
+      function playPause() { 
+          if (myVideo.paused) 
+            myVideo.play(); 
+          else 
+            myVideo.pause(); 
+      } 
+var myVideo2 = document.getElementById("video2"); 
+
+      function playPause2() { 
+          if (myVideo2.paused) 
+            myVideo2.play(); 
+          else 
+            myVideo2.pause(); 
+      } 
+
+    </script> 
+
+
+    <script src="js/index.js"></script>
+
+</body>

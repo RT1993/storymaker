@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Storymaker</title>
+     <link rel="stylesheet" href="css/style.css"> 
+</head>
+
+<body>
+
+<div class="makecharacter">
+
+    <div class="nav2">
+      <a href="character.html"><div class="confirm"><img src="image/confirm.png"></img></div></a>
+      <a href="character.html"><div class="prev"><img src="image/back.png"></img></div></a>
+    </div>
+
+<section id="id1">
+    <div class="characterdetail flex space-between">
+    	<div class="portait">
+    		<img src="image/portrait.png"></img>
+    	</div>	
+    	<div class="information">
+    		<div class="name">
+    			<h1>Name</h1>
+    			<form class="typename" method="post">
+                 <input type="text" class="typename1">
+                </form>
+    		</div>
+
+    		<div class="age">
+    			<h1>Age</h1>
+    			<form id='myform' method='POST' class='quantity' action='#'>
+                   <img src="image/reduce.png" type='button' value='-' class='qtyminus minus' field='quantity' />
+                   </img>
+                   <input type='text' name='quantity' value='5' class='qty' />
+                   <img src="image/plus.png" type='button' value='+' class='qtyplus plus' field='quantity' />
+                   </img>
+                </form>
+    		</div>
+
+    		<div class="choose">
+    			<h1>What kind of person I am?</h1>
+    			<div class="option1 flex space-between">
+    				<img src="image/goodicon.png">
+    				<img src="image/badicon.png">
+    			</div>
+    		</div>	
+
+    	</div>
+    </div>	
+</section>
+
+<section id="id2" class="hidden">
+    <div class="characterdetail flex space-between">
+    	<div class="portait">
+    		<img src="image/portrait2.png"></img>
+    	</div>	
+    	<div class="information2">
+            <img src="image/allhair.png"></img>
+    	</div>
+    </div>	
+</section>
+
+<section id="id3" class="hidden">
+    <div class="characterdetail flex space-between">
+    	<div class="portait">
+    		<img src="image/portrait2.png"></img>
+    	</div>	
+    	<div class="information2">
+            <img src="image/alleyebrown.png"></img>
+    	</div>
+    </div>	
+</section>
+
+<section id="id4" class="hidden">
+    <div class="characterdetail flex space-between">
+    	<div class="portait">
+    		<img src="image/portrait2.png"></img>
+    	</div>	
+    	<div class="information2">
+            <img src="image/alleyes.png"></img>
+    	</div>
+    </div>	
+</section>
+
+<section id="id5" class="hidden">
+    <div class="characterdetail flex space-between">
+    	<div class="portait">
+    		<img src="image/portrait2.png"></img>
+    	</div>	
+    	<div class="information2">
+            <img src="image/allnose.png"></img>
+    	</div>
+    </div>	
+</section>
+
+<section id="id6" class="hidden">
+    <div class="characterdetail flex space-between">
+    	<div class="portait">
+    		<img src="image/portrait2.png"></img>
+    	</div>	
+    	<div class="information2">
+            <img src="image/allmonth.png"></img>
+    	</div>
+    </div>	
+</section>
+
+<section id="id7" class="hidden">
+    <div class="characterdetail flex space-between">
+    	<div class="portait">
+    		<img src="image/portrait.png"></img>
+    	</div>	
+    	<div class="information2">
+            <img src="image/alltop.png"></img>
+    	</div>
+    </div>	
+</section>
+
+<section id="id8" class="hidden">
+    <div class="characterdetail flex space-between">
+    	<div class="portait">
+    		<img src="image/portrait.png"></img>
+    	</div>	
+    	<div class="information2">
+            <img src="image/allbottom.png"></img>
+    	</div>
+    </div>	
+</section>
+
+
+<section id="id9" class="hidden">
+    <div class="characterdetail flex space-between">
+    	<div class="portait">
+    		<img src="image/portrait.png"></img>
+    	</div>	
+    	<div class="information2">
+            <img src="image/allshoes.png"></img>
+    	</div>
+    </div>	
+</section>
+    <div class="colors">
+    	<div class="colorpalette">
+    		<img src="image/colors.jpg">
+        </div>		
+    </div>	
+    
+   <div class="footerbar">
+	  <div class="nameicon">
+	  	<img src="image/user.png" type="button" onclick="show('id1');"></img>
+	  </div>
+	<div class="features flex space-between">
+		<div class="features1" type="button" onclick="show('id2');">
+			<img src="image/hair.png">
+		</div>
+		<div class="features1" type="button" onclick="show('id3');">
+			<img src="image/eyebrown.png">
+		</div>
+		<div class="features1" type="button" onclick="show('id4');">
+			<img src="image/eyes.png">
+		</div>
+		<div class="features1" type="button" onclick="show('id5');">
+			<img src="image/nose.png">
+		</div>
+		<div class="features1" type="button" onclick="show('id6');">
+			<img src="image/month.png">
+		</div>
+		<div class="features1" type="button" onclick="show('id7');">
+			<img src="image/top.png">
+		</div>
+		<div class="features1" type="button" onclick="show('id8');">
+			<img src="image/bottom.png">
+		</div>
+		<div class="features1" type="button" onclick="show('id9');">
+			<img src="image/shoes.png">
+		</div>
+	</div>	
+  </div>
+
+
+
+
+</div>
+ <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+ <script src="js/index.js"></script>
+</body>

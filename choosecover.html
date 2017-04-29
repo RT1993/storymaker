@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Storymaker</title>
+     <link rel="stylesheet" href="css/style.css"> 
+</head>
+
+<body>
+  <div class="choosecover">
+    <div class="nav2">
+      <a href="mybook.html"><div class="next"><img src="image/confirm.png"></img></div></a>
+      <a href="makebook.html"><div class="back"><img src="image/back.png"></img></div></a>
+    </div>
+
+  <section id="id1"> 
+   <div class="book1">
+    <img src="image/book1.png"></img>
+   </div>
+  </section>  
+  <section id="id2" class="hidden"> 
+   <div class="book1">
+    <img src="image/book2.png"></img>
+   </div>
+  </section>
+
+   <div class="coveroptions">
+     <div class="covers flex space-between">
+       <div type="button" onclick="show('id1');"><img src="image/cover1.png"></img></div>
+       <div type="button" onclick="show('id2');"><img src="image/cover2.png"></img></div>
+       <img src="image/cover3.png"></img>
+       <img src="image/cover4.png"></img>
+       <img src="image/cover5.png"></img>
+     </div>
+
+     <div class="covercolors">
+      <img src="image/colors.png"></img>
+     </div> 
+   </div>
+
+  </div>  
+<script src="js/index.js"></script>
+</body>

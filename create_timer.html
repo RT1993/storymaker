@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Storymaker</title>
+     <link rel='stylesheet prefetch' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+
+     <link rel="stylesheet" href="css/style.css"> 
+</head>
+
+<body>
+	<div class="create_timer">
+
+      <div class="nav2">
+        <a href="video.html"><div class="confirm_timer"><img src="image/confirm.png"></img></div></a>
+        <a href="create.html"><div class="prev_timer"><img src="image/back.png"></img></div></a>
+      </div>
+
+      <div class="movecontainer2">
+      	<div class='box'>
+  	      <div><img src="image/character4.png"></img></div>
+        </div>
+
+        <div class='box'>
+  	      <a class="second"><img src="image/character11.png"></img></a>
+        </div>
+
+        <div class='box'>
+          <a class="second"><img src="image/dogicon.png"></img></a>
+        </div>
+      </div>	
+
+
+   
+
+
+      <div class="footerbar2">
+           
+<style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      html,
+
+* {
+  box-sizing: border-box;
+}
+
+input,
+label {
+  display: none;
+}
+
+.container {
+    font-family: "Arial", sans-serif;
+    margin: 39px auto 0;
+    width: 87vw;
+    min-width: 300px;
+    max-width: 400px;
+    text-align: center;
+}
+
+time {
+  font-size: 51px;
+  height: 1em;
+  line-height: 1em;
+  display: inline-block;
+  overflow: hidden;
+  animation-name: none;
+  animation-play-state: paused;
+  margin-bottom: 60px;
+  margin-top: -52px;
+  color: #fff;
+}
+
+time i,
+time b {
+  float: left;
+  font-style: normal;
+  font-weight: 100;
+  animation-name: inherit;
+  animation-play-state: inherit;
+}
+
+.container > time b {
+  height: 1em;
+  min-width: 0.3em;
+  padding-top: 0.3em;
+}
+
+.container > time b::before,
+.container > time b::after {
+  content: '';
+  display: block;
+  width: 0.08em;
+  height: 0.08em;
+  background-color: currentColor;
+  border-radius: 100%;
+  margin: 0 auto 0.29em;
+}
+
+time i::before,
+time i::after {
+  content: '0\A 1\A 2\A 3\A 4\A 5\A 6\A 7\A 8\A 9\A 0';
+  white-space: pre;
+  animation-name: inherit;
+  animation-play-state: inherit;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(10);
+  float: left;
+  margin: 0 0.02em;
+}
+
+time i:first-child::before,
+time i:nth-of-type(2)::before {
+  content: '0\A 1\A 2\A 3\A 4\A 5\A 0';
+  animation-timing-function: steps(6);
+}
+
+time i:first-child::before {
+  animation-duration: 3600s;
+}
+
+time i:first-child::after {
+  animation-duration: 600s;
+}
+
+time i:nth-of-type(2)::before {
+  animation-duration: 60s;
+}
+
+time i:nth-of-type(2)::after {
+  animation-duration: 10s;
+}
+
+time i:nth-of-type(3)::before {
+  animation-duration: 1s;
+}
+
+time i:nth-of-type(3)::after {
+  animation-duration: 100ms;
+}
+
+.controls {
+    position: absolute;
+    height: 80px;
+    margin-left: 290px;
+    margin-top: -815px;
+    margin-bottom: 130px;
+}
+
+.controls::before {
+  display: none;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  background-color: #2ecc71;
+  opacity: 0;
+  z-index: 10;
+}
+
+label {
+  cursor: pointer;
+  font-family: "Arial", sans-serif ;
+  font-size: 20px;
+  border: 6px solid #16a085;
+  background-color: #2ecc71;
+  box-shadow:0 0 0 2px #0F0F0F;
+  color: #ccc;
+  width: 153px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 43px;
+  position: absolute;
+  letter-spacing: 3px;
+  top: 0;
+  left: 0;
+}
+
+label[for="start"] {
+  background-color: #2ecc71;
+  border-color: #16a085;
+  color: #fff;
+}
+
+label[for="stop"] {
+  background-color: #2ecc71;
+  border-color: #16a085;
+  color: #fff;
+}
+
+label[for="start"],
+label[for="stop"] {
+  right: 0;
+  left: auto;
+}
+
+
+
+/* Visible control conditions */
+#start:checked ~ .controls label[for="stop"],
+#start:checked ~ #lap_1:not(:checked) ~ .controls label[for="lap_1"],
+#start:checked ~ #lap_1:checked + #lap_2:not(:checked) ~ .controls label[for="lap_2"],
+#start:checked ~ #lap_2:checked + #lap_3:not(:checked) ~ .controls label[for="lap_3"],
+#start:checked ~ #lap_3:checked + #lap_4:not(:checked) ~ .controls label[for="lap_4"],
+#start:checked ~ #lap_4:checked ~ .controls label[for="lap_4"],
+#stop:checked ~ .controls label[for="start"],
+#stop:checked ~ .controls label[for="reset"],
+#init:checked ~ .controls label[for="start"],
+#init:checked ~ .controls label[for="lap_1"] {
+  display: block;
+}
+
+/* Disable lap control conditions */
+#init:checked ~ .controls::before,
+#start:checked ~ #lap_4:checked ~ .controls::before {
+  display: block;
+}
+
+
+/* Visible lap conditions */
+.laps li:first-child time,
+.laps li:first-child::before,
+#lap_1:checked ~ .laps li:nth-child(2) time,
+#lap_1:checked ~ .laps li:nth-child(2)::before,
+#lap_2:checked ~ .laps li:nth-child(3) time,
+#lap_2:checked ~ .laps li:nth-child(3)::before,
+#lap_3:checked ~ .laps li:nth-child(4) time,
+#lap_3:checked ~ .laps li:nth-child(4)::before {
+  visibility: visible;
+}
+
+/* Reset */
+#init:checked ~ time,
+#init:checked ~ .laps li time {
+  animation-name: none;
+}
+
+#init:not(:checked) ~ time,
+#init:not(:checked) ~ .laps li time {
+  animation-name: digit;
+}
+
+/* Timer / Lap running conditions */
+#start:checked ~ time,
+#start:checked ~ #lap_1:not(:checked) ~ .laps li:first-child time,
+#start:checked ~:checked + #lap_2:not(:checked) ~ .laps li:nth-child(2) time,
+#start:checked ~:checked + #lap_3:not(:checked) ~ .laps li:nth-child(3) time,
+#start:checked ~:checked + #lap_4:not(:checked) ~ .laps li:nth-child(4) time {
+  animation-play-state: running;
+}
+
+/* Timer / Lap stopping conditions */
+#stop:checked ~ time,
+#stop:checked ~ .laps li time,
+#start:checked ~ #lap_1:checked ~ .laps li:first-child time,
+#start:checked ~ #lap_2:checked ~ .laps li:nth-child(2) time,
+#start:checked ~ #lap_3:checked ~ .laps li:nth-child(3) time,
+#start:checked ~ #lap_4:checked ~ .laps li:nth-child(4) time {
+  color: #fff;
+  animation-play-state: paused;
+}
+
+@keyframes digit {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(calc(-100% + 1em));
+  }
+}
+    </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+  <form class="container">
+  <input type="radio" id="init" name="control" checked="checked">
+  <input type="radio" id="stop" name="control">
+  <input type="radio" id="start" name="control">
+  <input type="reset" id="reset" name="control">
+  <input type="checkbox" id="lap_1" name="lap">
+  <input type="checkbox" id="lap_2" name="lap">
+  <input type="checkbox" id="lap_3" name="lap">
+  <input type="checkbox" id="lap_4" name="lap">
+
+  <time><i></i><b></b><i></i><b></b><i></i></time>
+
+  <div class="controls">
+    <label for="stop">STOP</label>
+    <label for="start">START</label>
+  </div>
+
+
+</form>
+  
+  
+</body>
+
+      </div>
+
+  </div>    
+
+      <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
