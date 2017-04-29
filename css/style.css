@@ -1494,6 +1494,17 @@ width: 384px;
   margin-top: 258px;
 }
 
+.book_home img {
+    width: 100%;
+}
+
+.book_home {
+    position: absolute;
+    margin-left: 805px;
+    margin-top: -305px;
+}
+
+
 }
 
 
