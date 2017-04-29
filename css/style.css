@@ -1296,11 +1296,12 @@ input.qtyminus {
  width:60%;
 }
 .bookoptions img{
-  /*position: relative;*/
-  width:50%;
+  position: absolute;
+  width:40%;
+  margin-left: -290px;
 }
 .tabbutton4{
-  position: fixed;
+  /*position: fixed;*/
   margin-left: 28px;
   margin-top: 115px;
   width:180px;
@@ -1503,7 +1504,11 @@ width: 384px;
     margin-left: 805px;
     margin-top: -305px;
 }
-
+.bookoptions img {
+    position: absolute;
+    width: 54%;
+    margin-left: -280px;
+}
 
 }
 
