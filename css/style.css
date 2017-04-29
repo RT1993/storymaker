@@ -1355,6 +1355,7 @@ input.qtyminus {
 }
 
 /* ============================== ONBOARDING =============================== */
+/*===== homepage =====*/
 .onboarding{
   position: absolute;
 }
@@ -1389,6 +1390,42 @@ input.qtyminus {
 }
 .instruction1{
   margin-left: 430px;
+}
+/*======= storyline ======*/
+/* ===== storyline =====*/
+.gesture2{
+  margin-left: 350px;
+  margin-top: -110px;
+}
+.gesture2 img{
+  width:12%;
+}
+
+.instruction2 img{
+  width: 100px;
+  margin-top: -20px;
+}
+.instruction2{
+  margin-top: -110px;
+  margin-left: 430px;
+}
+.first_info2{
+  width:580px;
+  margin-top: -70px;
+  margin-left: 40px;
+}
+.first_info2 h1{
+  color:#fff;
+  padding:30px 40px;
+  text-align: center;
+  font-family: "Chalkboard" ,sans-serif;
+  background-color: #583c30;
+  border: 10px solid #30c26e;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 130%;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
 }
 
 /*-      = ================================== video ============================*/
