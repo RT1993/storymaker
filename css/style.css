@@ -1017,7 +1017,10 @@ input.qtyminus {
 }
 
 .popup_img3 img{
-  width:36%;
+    position: absolute;
+    margin-top: -364px;
+    margin-left: -210px;
+    width: 130%;
 }
 /*================================recording====================================*/
 

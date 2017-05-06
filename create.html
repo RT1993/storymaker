@@ -23,12 +23,19 @@
       	<div class='box'>
           
       	     <div class="hiddenedit">
-      	       <div class="popup_main">
-                <div class="open_popup">
-                  <div><img src="image/character4.png"></div>
-                </div>
+      	       <!-- <div class="popup_main">
+                <div class="open_popup"> -->
+                  <div type="button" onclick="show('id1');"><img src="image/character4.png"></div>
+                
+                <section id="id1" class="hidden">
+                   <div class="popup_img3">
+                      <img src="image/edit.png">
+                    </div>
+                </section>  
+             </div>   
 
-                <div class="popup_body">
+
+<!--                 <div class="popup_body">
                   <div class="popup_back"></div>
 
                   <div class="popup_contain">
@@ -37,9 +44,9 @@
                     </div>
                   </div>
 
-                </div>
-               </div>
-             </div> 
+                </div> -->
+           <!--     </div>
+             </div>  -->
       </div>
 
             
@@ -51,6 +58,7 @@
         <div class='box'>
           <a class="second"><img src="image/dogicon.png"></img></a>
         </div>
+
       </div>	
 
    
@@ -71,12 +79,12 @@
               
 
                    <div class="popup_img">
-                    <section id="id13">
+                    <!-- <section id="id13"> -->
                    	 <div class="savedcharacters">
                    	 	<div type="button" onclick="show('id14');"><img src="image/mycharacter-good.png"></div>
                    	 </div>
 
-                    </section> 
+                    <!-- </section>  -->
                     <section id="id14" class="hidden">
                    	 <div class="savedcharacters">
                    	 	<div type="button" onclick="show('id13');"><img src="image/mycharacter-bad.png"></div>
