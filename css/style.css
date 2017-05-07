@@ -51,7 +51,7 @@
 }
 .add img:hover{
   opacity: 0.8;	
-  background-image: url('../image/addnghover.png');background-repeat: no-repeat;
+  /*background-image: url('../image/addnghover.png');background-repeat: no-repeat;*/
 }
 
 .question{
